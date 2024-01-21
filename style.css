@@ -90,6 +90,69 @@ ul{
 .nav_header_right li:hover > ul{
     display: block;
 }
+/* CSS nav check flex */
+.check_flex{
+    padding: 1rem;
+    text-align: center;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transform: all .4s ease;
+    -webkit-transform: all .4s ease;
+    -moz-transform: all .4s ease;
+    -ms-transform: all .4s ease;
+    -o-transform: all .4s ease;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+.switch input:checked + .slider {
+    background-color: #2196F3;
+}
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+.switch input:checked + .slider:before {
+    transform: translateX(26px);
+    -webkit-transform: translateX(26px);
+    -moz-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    -o-transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
 /* CSS class nav_content */
 .nav_content{
     display: flex;
@@ -97,7 +160,7 @@ ul{
     column-gap: 5rem;
     row-gap: 3rem;
     flex-wrap: wrap;
-    padding: 2.5rem 1rem;
+    padding: 0rem 1rem 2.5rem 1rem;
 }
 .box{
     width: 20%;
