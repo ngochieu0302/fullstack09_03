@@ -95,6 +95,11 @@ ul{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
 }
 .box img:hover{
     scale: 1.1;
@@ -123,7 +128,6 @@ ul{
     padding: 1rem;
     background-color: #aab5b9;
     display: none;
-    
 }
 .zalo:hover .box_zalo{
     display: block;
