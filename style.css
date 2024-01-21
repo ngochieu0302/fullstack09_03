@@ -15,12 +15,12 @@ ul{
     top: 0px;
     z-index: 100;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1rem;
-    font-size: 1rem;
     background-color: #e5e7eb;
     cursor: pointer;
+    font-weight: bold;
 }
 .nav_header_left{
     display: flex;
@@ -39,6 +39,18 @@ ul{
 .nav_header_right li{
     position: relative;
     background-color: #e5e7eb;
+}
+.nav_header_right > li > a:has(+ ul)::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d7";
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+.nav_header_right li > ul li a:has(+ ul)::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+    margin-left: 15px;
+    font-size: 0.8rem;
 }
 .nav_header_right li > ul li a{
     min-width: 200px;
@@ -71,6 +83,9 @@ ul{
     background-color: #0d9488;
     border-radius: 20px;
     color: white;
+}
+.nav_header_right > li:last-child::after{
+    content: " ";
 }
 .nav_header_right li:hover > ul{
     display: block;
@@ -146,6 +161,34 @@ ul{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     margin-right: 5px;
+}
+.contact{
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    transform: translate(45%, -50%);
+    -webkit-transform: translate(45%, -50%);
+    -moz-transform: translate(45%, -50%);
+    -ms-transform: translate(45%, -50%);
+    -o-transform: translate(45%, -50%);
+}
+.contact ul{
+    display: flex;
+    rotate: 90deg;
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    padding: 10px 0px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.contact li a{
+    color: black;
+    padding: 0px 10px;
+}
+.contact li a:hover{
+    color: rgb(220, 42, 131);
 }
 /* CSS nav footer */
 .nav_footer{
