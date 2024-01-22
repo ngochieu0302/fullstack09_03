@@ -256,12 +256,15 @@ ul{
 /* CSS nav footer */
 .nav_footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 20px;
-    padding: 50px 20px;
+    padding: 3.75rem 0px;
     background-color: black;
 }
 .box_footer a{
     color: whitesmoke;
     line-height: 2rem;
+}
+.box_footer ul li:hover{
+    background-color: #383e41;
 }
