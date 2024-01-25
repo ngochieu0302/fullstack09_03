@@ -1,259 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lập trình cuộc sống</title>
-    <link rel="icon" type="image/x-icon" href="/assets/images/logo.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <!-- Nav header -->
-    <div class="nav_header">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="fluid_header">
+      <!-- Nav header -->
+      <div class="nav_header">
+        <label for="mobile_menu_toggle" class="mobile_button">
+          <i class="fa fa-bars"></i>
+        </label>
         <a class="nav_header_left">
-            <img src="./assets/images/logo.jpg" alt="logo image">
-            <span>Lập trình cuộc sống</span>
+          <img src="./assets/images/logo.jpg" alt="logo image" />
+          <span>Lập trình cuộc sống</span>
         </a>
+        <input type="checkbox" name="" id="mobile_menu_toggle" style="display: none;">
+        <label for="mobile_menu_toggle" id="mask"></label>
         <ul class="nav_header_right">
-            <li><a href="#">Trang chủ</a></li>
-            <li>
-                <a href="#">Khóa học fullstack</a>
+          <li><a href="#">Trang chủ</a></li>
+          <li>
+            <a href="#">Khóa học fullstack</a>
+            <!-- <ul>
+              <li><a href="#">Khóa học frontend</a></li>
+              <li>
+                <a href="#">Khóa học backend</a>
                 <ul>
-                    <li><a href="#">Khóa học frontend</a></li>
-                    <li>
-                        <a href="#">Khóa học backend</a>
-                        <ul>
-                            <li><a href="#">Khóa học C#</a></li>
-                            <li><a href="#">Khóa học JAVA</a></li>
-                            <li>
-                                <a href="#">Khóa học PHP</a>
-                                <ul>
-                                    <li><a href="#">Khóa học PHP thứ 1</a></li>
-                                    <li><a href="#">Khóa học PHP thứ 2</a></li>
-                                    <li><a href="#">Khóa học PHP thứ 3</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Khóa học CSDL</a></li>
-                    <li><a href="#">Khóa học devops</a></li>
-                    <li><a href="#">Khóa học nâng cao CI/CD</a></li>
+                  <li><a href="#">Khóa học C#</a></li>
+                  <li><a href="#">Khóa học JAVA</a></li>
+                  <li>
+                    <a href="#">Khóa học PHP</a>
+                    <ul>
+                      <li><a href="#">Khóa học PHP thứ 1</a></li>
+                      <li><a href="#">Khóa học PHP thứ 2</a></li>
+                      <li><a href="#">Khóa học PHP thứ 3</a></li>
+                    </ul>
+                  </li>
                 </ul>
-            </li>
-            <li>
-                <a href="#">Bài viết hay</a>
+              </li>
+              <li><a href="#">Khóa học CSDL</a></li>
+              <li><a href="#">Khóa học devops</a></li>
+              <li><a href="#">Khóa học nâng cao CI/CD</a></li>
+            </ul> -->
+          </li>
+          <li>
+            <a href="#">Bài viết hay</a>
+            <!-- <ul>
+              <li><a href="#">Khóa học frontend</a></li>
+              <li>
+                <a href="#">Khóa học backend</a>
                 <ul>
-                    <li><a href="#">Khóa học frontend</a></li>
-                    <li>
-                        <a href="#">Khóa học backend</a>
-                        <ul>
-                            <li><a href="#">Khóa học C#</a></li>
-                            <li><a href="#">Khóa học JAVA</a></li>
-                            <li><a href="#">Khóa học PHP</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Khóa học CSDL</a>
-                        <ul>
-                            <li><a href="#">Khóa học C#</a></li>
-                            <li><a href="#">Khóa học JAVA</a></li>
-                            <li><a href="#">Khóa học PHP</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Khóa học devops</a></li>
-                    <li><a href="#">Khóa học nâng cao CI/CD</a></li>
+                  <li><a href="#">Khóa học C#</a></li>
+                  <li><a href="#">Khóa học JAVA</a></li>
+                  <li><a href="#">Khóa học PHP</a></li>
                 </ul>
-            </li>
-            <li><a href="#">Video</a></li>
-            <li><a href="#">Tác giả</a></li>
-            <li><a href="#">Đăng nhập</a></li>
+              </li>
+              <li>
+                <a href="#">Khóa học CSDL</a>
+                <ul>
+                  <li><a href="#">Khóa học C#</a></li>
+                  <li><a href="#">Khóa học JAVA</a></li>
+                  <li><a href="#">Khóa học PHP</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Khóa học devops</a></li>
+              <li><a href="#">Khóa học nâng cao CI/CD</a></li>
+            </ul> -->
+          </li>
+          <li><a href="#">Video</a></li>
+          <li><a href="#">Tác giả</a></li>
+          <li><a href="#">Đăng nhập</a></li>
         </ul>
+      </div>
     </div>
-    <div class="check_flex">
+    <hr />
+    <!-- <div class="check_flex">
         <label class="switch">
             <input type="checkbox" name="switch_button">
             <span class="slider round"></span>
         </label>
-    </div>
-    <!-- Nav content -->
-    <div class="nav_content">
+    </div> -->
+    <div class="fluid_content">
+      <!-- Nav content -->
+      <div class="nav_content">
         <!-- row 1 -->
         <div class="box">
-            <img src="./assets/images/content_1.jpg" alt="">
-            <div class="box_content">
-                <h2>Lập trình không code</h2>
-                <p>
-                    No-code hay lập trình kiểu kéo thả bằng các công cụ có sẵn mà không cần biết lập trình. Cách đây vài năm khi đưa no-code vào danh sách những phương án giải quyết vấn đề. Tôi đã học được rất nhiều.
-                </p>
-            </div>
+          <img src="./assets/images/content_1.jpg" alt="" />
+          <div class="box_content">
+            <h2>Lập trình không code</h2>
+            <p>
+              No-code hay lập trình kiểu kéo thả bằng các công cụ có sẵn mà
+              không cần biết lập trình. Cách đây vài năm khi đưa no-code vào
+              danh sách những phương án giải quyết vấn đề. Tôi đã học được rất
+              nhiều.
+            </p>
+          </div>
         </div>
         <div class="box">
-            <img src="./assets/images/content_2.jpg" alt="">
-            <div class="box_content">
-                <h2>Anh em lập trình viên đừng dùng Dark Mode nữa.</h2>
-                <p>
-                    Với hầu hết anh em lập trình, dark mode rất được yêu thích. Nó làm cho mắt của chúng ta dễ chịu, nhưng mình lại chuyển sang sử dụng chế độ tự động thay vì chế độ tối
-                </p>
-            </div>
+          <img src="./assets/images/content_2.jpg" alt="" />
+          <div class="box_content">
+            <h2>Anh em lập trình viên đừng dùng Dark Mode nữa.</h2>
+            <p>
+              Với hầu hết anh em lập trình, dark mode rất được yêu thích. Nó làm
+              cho mắt của chúng ta dễ chịu, nhưng mình lại chuyển sang sử dụng
+              chế độ tự động thay vì chế độ tối
+            </p>
+          </div>
         </div>
         <div class="box">
-            <img src="./assets/images/content_3.png" alt="">
-            <div class="box_content">
-                <h2>Cách yêu một anh chàng lập trình viên</h2>
-                <p>
-                    Bài này viết riêng cho các chị em đang và sẽ yêu một anh chàng làm nghề lập trình, Lập trình là một đam mê, và để yêu hắn, bạn phải chấp nhận, chấp nhận rằng hắn là những linh hồn tự do, hắn có đam mê của riêng hắn
-                </p>
-            </div>
+          <img src="./assets/images/content_3.png" alt="" />
+          <div class="box_content">
+            <h2>Cách yêu một anh chàng lập trình viên</h2>
+            <p>
+              Bài này viết riêng cho các chị em đang và sẽ yêu một anh chàng làm
+              nghề lập trình, Lập trình là một đam mê, và để yêu hắn, bạn phải
+              chấp nhận, chấp nhận rằng hắn là những linh hồn tự do, hắn có đam
+              mê của riêng hắn
+            </p>
+          </div>
         </div>
         <div class="box">
-            <img src="./assets/images/content_4.jpg" alt="">
-            <div class="box_content">
-                <h2>Thiết kế UX tuyệt đỉnh bằng kiến thức về game</h2>
-                <p>
-                    Vận dụng tư duy thiết kế game vào thiết kế UX là một mảng nhỏ khá thú vị, Cảm nhận của user trên app, web khá tương đồng với cảm nhận của gamer, chúng ta sẽ tìm hiểu về gamification.
-                </p>
-            </div>
+          <img src="./assets/images/content_4.jpg" alt="" />
+          <div class="box_content">
+            <h2>Thiết kế UX tuyệt đỉnh bằng kiến thức về game</h2>
+            <p>
+              Vận dụng tư duy thiết kế game vào thiết kế UX là một mảng nhỏ khá
+              thú vị, Cảm nhận của user trên app, web khá tương đồng với cảm
+              nhận của gamer, chúng ta sẽ tìm hiểu về gamification.
+            </p>
+          </div>
         </div>
         <!-- row 2 -->
         <div class="box">
-            <img src="./assets/images/content_1.jpg" alt="">
-            <div class="box_content">
-                <h2>Lập trình không code</h2>
-                <p>
-                    No-code hay lập trình kiểu kéo thả bằng các công cụ có sẵn mà không cần biết lập trình. Cách đây vài năm khi đưa no-code vào danh sách những phương án giải quyết vấn đề. Tôi đã học được rất nhiều.
-                </p>
-            </div>
+          <img src="./assets/images/content_1.jpg" alt="" />
+          <div class="box_content">
+            <h2>Lập trình không code</h2>
+            <p>
+              No-code hay lập trình kiểu kéo thả bằng các công cụ có sẵn mà
+              không cần biết lập trình. Cách đây vài năm khi đưa no-code vào
+              danh sách những phương án giải quyết vấn đề. Tôi đã học được rất
+              nhiều.
+            </p>
+          </div>
         </div>
         <div class="box">
-            <img src="./assets/images/content_2.jpg" alt="">
-            <div class="box_content">
-                <h2>Anh em lập trình viên đừng dùng Dark Mode nữa.</h2>
-                <p>
-                    Với hầu hết anh em lập trình, dark mode rất được yêu thích. Nó làm cho mắt của chúng ta dễ chịu, nhưng mình lại chuyển sang sử dụng chế độ tự động thay vì chế độ tối
-                </p>
-            </div>
+          <img src="./assets/images/content_2.jpg" alt="" />
+          <div class="box_content">
+            <h2>Anh em lập trình viên đừng dùng Dark Mode nữa.</h2>
+            <p>
+              Với hầu hết anh em lập trình, dark mode rất được yêu thích. Nó làm
+              cho mắt của chúng ta dễ chịu, nhưng mình lại chuyển sang sử dụng
+              chế độ tự động thay vì chế độ tối
+            </p>
+          </div>
         </div>
         <div class="box">
-            <img src="./assets/images/content_3.png" alt="">
-            <div class="box_content">
-                <h2>Cách yêu một anh chàng lập trình viên</h2>
-                <p>
-                    Bài này viết riêng cho các chị em đang và sẽ yêu một anh chàng làm nghề lập trình, Lập trình là một đam mê, và để yêu hắn, bạn phải chấp nhận, chấp nhận rằng hắn là những linh hồn tự do, hắn có đam mê của riêng hắn
-                </p>
-            </div>
+          <img src="./assets/images/content_3.png" alt="" />
+          <div class="box_content">
+            <h2>Cách yêu một anh chàng lập trình viên</h2>
+            <p>
+              Bài này viết riêng cho các chị em đang và sẽ yêu một anh chàng làm
+              nghề lập trình, Lập trình là một đam mê, và để yêu hắn, bạn phải
+              chấp nhận, chấp nhận rằng hắn là những linh hồn tự do, hắn có đam
+              mê của riêng hắn
+            </p>
+          </div>
         </div>
         <div class="box">
-            <img src="./assets/images/content_4.jpg" alt="">
-            <div class="box_content">
-                <h2>Thiết kế UX tuyệt đỉnh bằng kiến thức về game</h2>
-                <p>
-                    Vận dụng tư duy thiết kế game vào thiết kế UX là một mảng nhỏ khá thú vị, Cảm nhận của user trên app, web khá tương đồng với cảm nhận của gamer, chúng ta sẽ tìm hiểu về gamification.
-                </p>
-            </div>
+          <img src="./assets/images/content_4.jpg" alt="" />
+          <div class="box_content">
+            <h2>Thiết kế UX tuyệt đỉnh bằng kiến thức về game</h2>
+            <p>
+              Vận dụng tư duy thiết kế game vào thiết kế UX là một mảng nhỏ khá
+              thú vị, Cảm nhận của user trên app, web khá tương đồng với cảm
+              nhận của gamer, chúng ta sẽ tìm hiểu về gamification.
+            </p>
+          </div>
         </div>
         <!-- row 3 -->
         <div class="box">
-            <img src="./assets/images/content_1.jpg" alt="">
-            <div class="box_content">
-                <h2>Lập trình không code</h2>
-                <p>
-                    No-code hay lập trình kiểu kéo thả bằng các công cụ có sẵn mà không cần biết lập trình. Cách đây vài năm khi đưa no-code vào danh sách những phương án giải quyết vấn đề. Tôi đã học được rất nhiều.
-                </p>
-            </div>
+          <img src="./assets/images/content_1.jpg" alt="" />
+          <div class="box_content">
+            <h2>Lập trình không code</h2>
+            <p>
+              No-code hay lập trình kiểu kéo thả bằng các công cụ có sẵn mà
+              không cần biết lập trình. Cách đây vài năm khi đưa no-code vào
+              danh sách những phương án giải quyết vấn đề. Tôi đã học được rất
+              nhiều.
+            </p>
+          </div>
         </div>
         <div class="box">
-            <img src="./assets/images/content_2.jpg" alt="">
-            <div class="box_content">
-                <h2>Anh em lập trình viên đừng dùng Dark Mode nữa.</h2>
-                <p>
-                    Với hầu hết anh em lập trình, dark mode rất được yêu thích. Nó làm cho mắt của chúng ta dễ chịu, nhưng mình lại chuyển sang sử dụng chế độ tự động thay vì chế độ tối
-                </p>
-            </div>
+          <img src="./assets/images/content_2.jpg" alt="" />
+          <div class="box_content">
+            <h2>Anh em lập trình viên đừng dùng Dark Mode nữa.</h2>
+            <p>
+              Với hầu hết anh em lập trình, dark mode rất được yêu thích. Nó làm
+              cho mắt của chúng ta dễ chịu, nhưng mình lại chuyển sang sử dụng
+              chế độ tự động thay vì chế độ tối
+            </p>
+          </div>
         </div>
         <div class="box">
-            <img src="./assets/images/content_3.png" alt="">
-            <div class="box_content">
-                <h2>Cách yêu một anh chàng lập trình viên</h2>
-                <p>
-                    Bài này viết riêng cho các chị em đang và sẽ yêu một anh chàng làm nghề lập trình, Lập trình là một đam mê, và để yêu hắn, bạn phải chấp nhận, chấp nhận rằng hắn là những linh hồn tự do, hắn có đam mê của riêng hắn
-                </p>
-            </div>
+          <img src="./assets/images/content_3.png" alt="" />
+          <div class="box_content">
+            <h2>Cách yêu một anh chàng lập trình viên</h2>
+            <p>
+              Bài này viết riêng cho các chị em đang và sẽ yêu một anh chàng làm
+              nghề lập trình, Lập trình là một đam mê, và để yêu hắn, bạn phải
+              chấp nhận, chấp nhận rằng hắn là những linh hồn tự do, hắn có đam
+              mê của riêng hắn
+            </p>
+          </div>
         </div>
         <div class="box">
-            <img src="./assets/images/content_4.jpg" alt="">
-            <div class="box_content">
-                <h2>Thiết kế UX tuyệt đỉnh bằng kiến thức về game</h2>
-                <p>
-                    Vận dụng tư duy thiết kế game vào thiết kế UX là một mảng nhỏ khá thú vị, Cảm nhận của user trên app, web khá tương đồng với cảm nhận của gamer, chúng ta sẽ tìm hiểu về gamification.
-                </p>
-            </div>
+          <img src="./assets/images/content_4.jpg" alt="" />
+          <div class="box_content">
+            <h2>Thiết kế UX tuyệt đỉnh bằng kiến thức về game</h2>
+            <p>
+              Vận dụng tư duy thiết kế game vào thiết kế UX là một mảng nhỏ khá
+              thú vị, Cảm nhận của user trên app, web khá tương đồng với cảm
+              nhận của gamer, chúng ta sẽ tìm hiểu về gamification.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
+
     <div class="zalo">
-        <img class="icon_zalo" src="https://page.widget.zalo.me/static/images/2.0/Logo.svg" alt="Zalo Button">
-        <div class="box_zalo">
-            <div class="box_zalo_header">
-                <img src="./assets/images/logo.jpg" alt="logo image">
-                <span>Lập trình cuộc sống</span>
-            </div>
-            <div class="box_zalo_content"></div>
+      <img
+        class="icon_zalo"
+        src="https://page.widget.zalo.me/static/images/2.0/Logo.svg"
+        alt="Zalo Button"
+      />
+      <div class="box_zalo">
+        <div class="box_zalo_header">
+          <img src="./assets/images/logo.jpg" alt="logo image" />
+          <span>Lập trình cuộc sống</span>
         </div>
+        <div class="box_zalo_content"></div>
+      </div>
     </div>
     <div class="contact">
-        <ul>
-            <li><a href="#">facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Youtube</a></li>
-        </ul>
+      <ul>
+        <li><a href="#">facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Youtube</a></li>
+      </ul>
     </div>
-
 
     <!-- Nav Footer -->
-    <div class="nav_footer">
+    <hr>
+    <div class="fluid_footer">
+      <div class="nav_footer">
         <div class="box_footer">
-            <h3>Theo dõi blog</h3>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="">Chúng tôi trên facebook</a></li>
-                <li><a href="">Chúng tôi trên youtube</a></li>
-                <li><a href="">Chúng tôi trên facebook</a></li>
-                <li><a href="">Chúng tôi trên youtube</a></li>
-                <li><a href="">Chúng tôi trên facebook</a></li>
-                <li><a href="">Chúng tôi trên youtube</a></li>
-            </ul>
+          <h3>Theo dõi blog</h3>
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="">Chúng tôi trên facebook</a></li>
+            <li><a href="">Chúng tôi trên youtube</a></li>
+            <li><a href="">Chúng tôi trên facebook</a></li>
+            <li><a href="">Chúng tôi trên youtube</a></li>
+            <li><a href="">Chúng tôi trên facebook</a></li>
+            <li><a href="">Chúng tôi trên youtube</a></li>
+          </ul>
         </div>
         <div class="box_footer">
-            <h3>Link hữu ích</h3>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="">Chúng tôi trên facebook</a></li>
-                <li><a href="">Chúng tôi trên youtube</a></li>
-                <li><a href="">Chúng tôi trên facebook</a></li>
-                <li><a href="">Chúng tôi trên youtube</a></li>
-                <li><a href="">Chúng tôi trên facebook</a></li>
-            </ul>
+          <h3>Link hữu ích</h3>
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="">Chúng tôi trên facebook</a></li>
+            <li><a href="">Chúng tôi trên youtube</a></li>
+            <li><a href="">Chúng tôi trên facebook</a></li>
+            <li><a href="">Chúng tôi trên youtube</a></li>
+            <li><a href="">Chúng tôi trên facebook</a></li>
+          </ul>
         </div>
         <div class="box_footer">
-            <h3>Blog bạn bè</h3>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="">Chúng tôi trên facebook</a></li>
-                <li><a href="">Chúng tôi trên youtube</a></li>
-                <li><a href="">Chúng tôi trên facebook</a></li>
-                <li><a href="">Chúng tôi trên youtube</a></li>
-                <li><a href="">Chúng tôi trên facebook</a></li>
-                <li><a href="">Chúng tôi trên youtube</a></li>
-            </ul>
+          <h3>Blog bạn bè</h3>
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="">Chúng tôi trên facebook</a></li>
+            <li><a href="">Chúng tôi trên youtube</a></li>
+            <li><a href="">Chúng tôi trên facebook</a></li>
+            <li><a href="">Chúng tôi trên youtube</a></li>
+            <li><a href="">Chúng tôi trên facebook</a></li>
+            <li><a href="">Chúng tôi trên youtube</a></li>
+          </ul>
         </div>
         <div class="box_footer">
-            <h3>Kết nối</h3>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="">Chúng tôi trên facebook</a></li>
-                <li><a href="">Chúng tôi trên youtube</a></li>
-            </ul>
+          <h3>Kết nối</h3>
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="">Chúng tôi trên facebook</a></li>
+            <li><a href="">Chúng tôi trên youtube</a></li>
+          </ul>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
